@@ -1,0 +1,25 @@
+form  {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    border-radius: 22px;
+    width: 300px;
+    height: 45px;
+    border: 0ch;
+}
+form button {
+    border-radius: 22px;
+    padding: 10px 20px;
+    border: 0ch;
+    color: #00784d;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.formEmail {
+    background-color: #00784d;
+}

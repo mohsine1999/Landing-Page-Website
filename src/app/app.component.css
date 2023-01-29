@@ -1,0 +1,29 @@
+.all{
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../assets/images/RECYCLAGE.svg");
+  
+    /* Set a specific height */
+    min-height: 550px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media screen and (max-width:880px) {
+    .parallax {
+        width: 0%;
+        height: 0%;
+    }
+    
+}
+    

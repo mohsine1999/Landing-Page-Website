@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Inter';
+    padding-bottom: 10%;
+
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.thirdRow {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdRow2 {
+    flex: 1;
+    padding: 70px 100px;
+}
+
+.thirdRow2 h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 100%;
+    color: #000F37;
+}
+
+.thirdRow2 p {
+    width: 446px;
+    height: 224px;
+    left: 853px;
+    top: 3212px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #575757;
+}
+
+.thirdRow-2 {
+    flex: 1;
+    z-index: 100;
+}
+
+.thirdRow-2 img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    max-height: 95%;
+    width: 100%;
+}
+
+.btn-dark2{
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FAFAFA;
+    border-radius: 5px;
+}
+
+/* Blue Box */
+.thirdRow-1
+{
+    position:absolute;
+    background-color: #1E5AFA;
+    width: 50%;
+    height: 40%;
+    margin-top: 0;
+    border-radius: 10px;
+    flex: 1;
+    z-index: 1;
+}
+
+@media screen and (max-width :880px) {
+    .section-container
+    {
+        flex-direction: column;
+        
+    } 
+    .thirdRow-2 img {
+        width: 100%;
+    }
+
+    .thirdRow2 {
+        padding: 20px 35px;
+    }
+
+    .thirdRow2 h1 {
+        display: block;
+        width: 95%;
+    }
+
+    .thirdRow2 p {
+        display: block;
+        width: 90%;
+        height: 100%;
+    }
+
+}

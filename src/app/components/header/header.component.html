@@ -1,0 +1,46 @@
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<div style="background-image:url('assets/images/headerBg.svg'); background-repeat: no-repeat;">
+<div class="my-container" >
+<div class="headerTitle" >
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top shadow w-100" style="position: absolute; background-color:#FAFAFA;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center p-0" href="index.html"><img class="img-fluid" src="../assets/images/recyclage-logo.svg" style=" height:50px; width:132px; "></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto m-auto ">
+                    <li class="nav-item" id="Home"><a class="nav-link active" style="color: black;" href="#">{{ 'HOME' | translate}}</a></li>
+                   <button id="hotoUse" style="background-color:#ffffff00; border:0ch;"> <li class="nav-item black" id="services"><a class="nav-link" style="color: black ;" (click)="scroll(target)">{{ 'HowToUse' | translate}}</a></li></button>
+                </ul>
+                <div class="dropdown me-2" id="translation">
+                    <a class="dropdown-toggle link-dark d-flex align-items-center" id="trns" style="font-size:22px; " aria-expanded="false" data-bs-toggle="dropdown"  href="#">
+                    <i class="bi bi-globe" style="margin-right: 15px; color: rgb(0, 0, 0);"></i>{{ 'LANGUAGE' | translate}}</a>
+                    <div class="dropdown-menu dropdown-menu-end shadow" id="DelNav" style="backdrop-filter: blur(32px);background: #ffffff;">
+                        
+                        <button style="background-color:#ffffff00; border:0ch;"> <a class="dropdown-item" (click)=" changeCurrentLang('fr')">
+                        <img class="img-fluid me-1" src="assets/images/frFlag.svg"  style="width: 26px;">Frensh</a></button>
+
+                        <button style="background-color:#ffffff00; border:0ch; "> <a class="dropdown-item" (click)="changeCurrentLang('en')">
+                        <img class="img-fluid me-1" src="assets/images/usFlag.svg" style="width: 26px;">English</a> </button>
+                    </div>
+                </div><button id="download" class="btn btn-light" type="button" style="margin-left: 20px;">{{'DOWNLOAD' | translate}}</button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <div class="my-text1">{{ 'TITLE' | translate}}</div><br>
+    <div class="my-text3">{{ 'TEXT' | translate}}</div>
+    <div class="my-headerIMG">
+        <img src="../assets/images/headerIMG.png" alt="">
+    </div>
+<div class="downloadButton">
+    <a class="downloadButton-GooglePlay" href="#">
+        <img  class="img-fluid me-1" src="assets/images/googlePlay.svg" style="width: 15%; "></a>
+        <a class="downloadButton-Appstore" href="#">
+            <img  class="img-fluid me-1" src="assets/images/appStore.svg" style="width: 15%; margin-left: 15px;"></a>
+</div>
+
+</div>
+<div #target></div>
+</div>

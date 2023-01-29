@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Inter';
+}
+
+.section-container{
+    --bs-gutter-x : 1.5rem;
+    --bs-gutter-y : 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+    padding-bottom: 10%;
+
+}
+
+.section-container .columns{
+    flex:0 0 auto;
+    width: 50%;
+    height: 600px;
+}
+
+.section-container .columns.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-container .columns.image img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    max-height: 95%;
+    width: auto;
+   
+}
+
+.section-container .columns.content .content-container{
+    padding: 100px 70px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-container .columns.content .content-container h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 100%;
+    letter-spacing: -3px;
+    color: #313131;
+
+
+}
+
+.section-container .columns.content .content-container p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #575757;
+    
+}
+
+@media screen and (max-width :880px) {
+    .section-container
+    {
+        flex-flow: row wrap;
+    }
+    .section-container .columns.image
+    {
+        
+        
+        align-items: center;
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .section-container .columns.content
+    {
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+    .section-container .columns.content .content-container
+    {
+        padding: 20px 35px;
+    }
+    .section-container .columns.content .content-container h1
+    {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .section-container .columns.content .content-container p
+    {
+        padding-top: 50px;
+        width: 80%;
+        height: 100%;
+    }
+
+    .section-container .columns.content .content-container .downloadButton  {
+
+        width: 70%;
+        height: 70%;
+   
+    }
+
+    
+}
+.downloadButton{
+    align-items: flex-start;
+
+}
+
+
